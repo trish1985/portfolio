@@ -1,87 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
-  
-  <style>
-    /* Dito mo ilalagay yung CSS later para maganda tignan */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    section {
-      padding: 60px 20px;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anna Tricia - Portfolio</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* HERO */
+#hero {
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 60px 20px;
+}
+
+#hero img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* PROJECTS */
+.project {
+  background: white;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* SKILLS */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  background: #ddd;
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+/* CONTACT */
+#contact {
+  background: #fff;
+  text-align: center;
+}
+</style>
+
 </head>
+
 <body>
-  
-  <!-- SECTION 1: HERO SECTION -->
-  <section id="hero">
-    <div class="container">
-      <h1>Anna Tricia O. Sagadal</h1>
-      <p>2nd Year IT Student | Data Analyst</p>
-      <img src="myimage.jpg" alt="My Photo" width="150">
+
+<!-- HERO -->
+<section id="hero">
+  <h1>Anna Tricia O. Sagadal</h1>
+  <p>2nd Year IT Student | Data Analyst</p>
+  <img src="myimage.jpg" alt="My Photo">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I'm a 2nd Year BSIT student. I want to become a Data Analyst.
+      I turn raw data into clear insights for better decisions.
+    </p>
+
+    <h3>My Skills</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <h3>Agricultural System Land</h3>
+      <p>A simple website.</p>
+      <p><strong>Tech:</strong> HTML, CSS, JS</p>
     </div>
-  </section>
 
-  <!-- SECTION 2: ABOUT ME -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I'm a 2nd Year BSIT student. I want to become a Data Analyst. I want to turn raw data into clear insight that help businesses make better decisions.</p>
-      
-      <h3>My Skills</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-      </ul>
+    <div class="project">
+      <h3>Beauty Products Website</h3>
+      <p>A simple website.</p>
+      <p><strong>Tech:</strong> HTML, CSS</p>
     </div>
-  </section>
 
-  <!-- SECTION 3: PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      
-      <div class="project">
-        <h3>Project 1: Agricultural_System-land</h3>
-        <p>A simple website.</p>
-        <p><strong>Tech Used:</strong> HTML, CSS, JS</p>
-      </div>
-
-      <div class="project">
-        <h3>Project 2: Beauty Products Website</h3>
-        <p>A simple website </p>
-        <p><strong>Tech Used:</strong> HTML,CSS</p>
-      </div>
-
-      <div class="project"></div>
-        <h3>Project 3: Virtual Box Machine</h3>
-        <p>Create an Oracle virtualbox Machine</p>
-        <p><strong>Tech Used:</strong> Ubunto</p>
-      </div>
-
+    <div class="project">
+      <h3>VirtualBox Machine</h3>
+      <p>Created a virtual machine using Oracle VirtualBox.</p>
+      <p><strong>Tech:</strong> Ubuntu</p>
     </div>
-  </section>
 
-  <!-- SECTION 4: CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: shankianeash052617@gmail.com</p>
-      <p>GitHub: shankianeash052617@gmail.com/trish1985</p>
-    </div>
-  </section>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Email: shankianeash052617@gmail.com</p>
+    <p>GitHub: https://github.com/trish1985/portfolio.git</p>
+  </div>
+</section>
 
 </body>
 </html>
