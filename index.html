@@ -168,13 +168,22 @@
     background-clip: text;
   }
   
-  .about-grid {
+  .about-grid{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 50px;
     align-items: start;
-  }
-  
+}
+
+/* LEFT SIDE CARD STYLE */
+.about-text{
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+
+    border-left: 5px solid #9333ea;
+}
+
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -338,28 +347,50 @@
   </header>
 
   <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-grid">
-        <div>
-          <p>I am a 2nd Year Bachelor of Science in Information Technology student with a strong interest in data analysis and technology solutions. My goal is to become a Data Analyst who helps organizations make smarter decisions through data.</p>
-          <p style="margin-top: 18px;">I enjoy working with datasets, building simple web applications, and exploring tools that make data more accessible and meaningful. Currently expanding my skills in Python, SQL, and data visualization.</p>
-        </div>
-        
-        <div>
-          <h3 style="margin-bottom: 20px; color: var(--primary-dark);">Technical Skills</h3>
-          <div class="skills-grid">
-            <div class="skill">HTML5</div>
-            <div class="skill">CSS3</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Python</div>
-            <div class="skill">SQL</div>
-            <div class="skill">Git & GitHub</div>
-          </div>
-        </div>
+  <div class="container">
+
+    <h2>About Me</h2>
+
+    <div class="about-grid">
+
+      <!-- LEFT SIDE -->
+      <div class="about-text">
+
+        <p>
+          I am a 2nd Year Bachelor of Science in Information Technology student with a strong interest in data analysis and technology solutions.
+        </p>
+
+        <p style="margin-top: 18px;">
+          My goal is to become a Data Analyst who helps organizations make smarter decisions through data.
+        </p>
+
+        <p style="margin-top: 18px;">
+          I enjoy working with datasets, building simple web applications, and exploring tools that make data more accessible and meaningful. Currently expanding my skills in Python, SQL, and data visualization.
+        </p>
+
       </div>
+
+      <!-- RIGHT SIDE (UNCHANGED SKILLS) -->
+      <div>
+
+        <h3 style="margin-bottom: 20px; color: var(--primary-dark);">
+          Technical Skills
+        </h3>
+
+        <div class="skills-grid">
+          <div class="skill">HTML5</div>
+          <div class="skill">CSS3</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Python</div>
+          <div class="skill">SQL</div>
+          <div class="skill">Git & GitHub</div>
+        </div>
+
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="projects">
     <div class="container">
@@ -409,3 +440,5 @@
 
 </body>
 </html>
+Compose
+Write to Anna Tricia Sagadal
